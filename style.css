@@ -1,5 +1,14 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 a {
 	color: #199cdc;
+	text-decoration: none;
 }
 
 h2 {
@@ -82,7 +91,7 @@ li {
 }
 
 .head_container {
-	background-image: linear-gradient(to bottom, rgba(72, 72, 72, 0.65), rgba(60, 60, 60, 0.85)), url('images/adventure.jpg');
+	background-image: linear-gradient(to bottom, rgba(72, 72, 72, 0.65), rgba(20, 20, 20, 0.85)), url('images/adventure.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -97,7 +106,7 @@ li {
 .bar {
 	background: #e8e8e8;
 	z-index: 1;
-	box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .body_container {
@@ -136,8 +145,14 @@ li {
 
 .card {
 	position: relative;
-	border: 0.1em solid #dbdbdb;
+	border: 0.1em solid #d4d4d4;
 	padding: 3em;
+	box-shadow: 0.4em 0.4em 1.5em rgba(0,0,0, 0.1);
+}
+
+.card:hover{
+	box-shadow: 0.4em 0.4em 3em rgba(0,0,0, 0.3);
+	transition: 0.7s;
 }
 
 .icon {
