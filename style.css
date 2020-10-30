@@ -8,6 +8,10 @@ h2 {
 	font-weight: bold; 
 }
 
+h3 {
+	font-size: 1em;
+}
+
 h4 {
 	color: #333333;
 	font-family: Arial, san-serif;
@@ -23,6 +27,15 @@ ul {
 
 li {
 	padding: 0.3em
+}
+
+.card ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #199cdc; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 0em; /* Also needed for space (tweak if needed) */
 }
 
 .color_flag {
@@ -84,13 +97,13 @@ li {
 .bar {
 	background: #e8e8e8;
 	z-index: 1;
-	box-shadow: 0 0 20px black;
+	box-shadow: 0 0 10px black;
 }
 
 .body_container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto auto;
 }
 
 .body_container_about {
@@ -111,9 +124,32 @@ li {
 .body_container_resume {
 	grid-column: 1/4;
 	background: #e8e8e8;
-	padding: 2vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2vw;
 }
 
+.card {
+	position: relative;
+	border: 0.1em solid #dbdbdb;
+	padding: 3em;
+}
 
+.icon {
+	position: absolute;
+	top: 5vh;
+	left: 15vw;
+	width: 3.1em;
+	opacity: 0.4;
+}
 
-
+.card_content {
+	color: #777777;
+	font-family: Arial, san-serif;
+	font-weight: normal; 
+}
