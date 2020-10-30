@@ -6,9 +6,19 @@ html,body{
     overflow-x: hidden; 
 }
 
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
 a {
 	color: #199cdc;
 	text-decoration: none;
+}
+
+a:hover {
+	text-shadow: 0 0 5px rgba(25,156,220,0.3);
+	transition: 0.8;
 }
 
 h2 {
@@ -47,11 +57,6 @@ li {
   margin-left: 0em; /* Also needed for space (tweak if needed) */
 }
 
-.color_flag {
-	background: #199cdc;
-	width: 2.5vw;
-	height: 0.3vh;
-}
 
 .text_content {
 	color: #777777;
@@ -117,17 +122,17 @@ li {
 
 .body_container_about {
 	background: #f5f5f5;
-	padding: 2vw;
+	padding: 3vw;
 }
 
 .body_container_info {
 	background: #f0f0f0;
-	padding: 2vw;
+	padding: 3vw;
 }
 
 .body_container_expertise {
 	background: #f5f5f5;
-	padding: 2vw;
+	padding: 3vw;
 }
 
 .body_container_resume {
@@ -143,6 +148,12 @@ li {
 	grid-gap: 2vw;
 }
 
+.color_flag {
+	background: #199cdc;
+	width: 2.5vw;
+	height: 0.3vh;
+}
+
 .card {
 	position: relative;
 	border: 0.1em solid #d4d4d4;
@@ -154,11 +165,15 @@ li {
 	box-shadow: 0.4em 0.4em 3em rgba(0,0,0, 0.3);
 	transition: 0.7s;
 }
+.card:hover > .color_flag {
+	width: 1.5vw;
+	transition: 0.7s;
+}
 
 .icon {
 	position: absolute;
 	top: 5vh;
-	left: 15vw;
+	left: 16.5vw;
 	width: 3.1em;
 	opacity: 0.4;
 }
@@ -168,3 +183,12 @@ li {
 	font-family: Arial, san-serif;
 	font-weight: normal; 
 }
+
+.blue_text_style {
+	color: #199cdc;
+	font-weight: bold;
+}
+
+
+
+
