@@ -6,9 +6,19 @@ html,body{
     overflow-x: hidden; 
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 10px;
+  background: #199cdc;
 }
 
 a {
@@ -41,7 +51,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-top: 2em;
 }
 
 li {
@@ -57,6 +66,20 @@ li {
   margin-left: 0em; /* Also needed for space (tweak if needed) */
 }
 
+.edu_dl dt {
+	padding-top: 1em;
+	padding-bottom: 0.2em;
+    font-weight: bold;
+  }
+.edu_dl dd {
+	color: grey;
+    margin: 0;
+    padding: 0 0 0.5em 0;
+  }
+
+.spacener_2em {
+	  padding-top: 2em;
+}
 
 .text_content {
 	color: #777777;
@@ -130,7 +153,7 @@ li {
 	padding: 3vw;
 }
 
-.body_container_expertise {
+.body_container_projects {
 	background: #f5f5f5;
 	padding: 3vw;
 }
@@ -170,12 +193,36 @@ li {
 	transition: 0.7s;
 }
 
+.card:hover > img {
+	transform: rotate(7deg);
+	transition: 0.7s;
+}
+
 .icon {
 	position: absolute;
 	top: 5vh;
 	left: 16.5vw;
 	width: 3.1em;
 	opacity: 0.4;
+}
+
+.icon_soc_media {
+	border-radius: 20%;
+	border: 0.15em solid #199cdc;
+	position: relative;
+	top: 5vh;
+	left: 16.5vw;
+	width: 3.1em;
+	width: 2em;
+	height: 2em;
+	padding: 0.2em;
+	opacity: 0.4;
+}
+
+.icon_soc_media:hover {
+	top: 4.2vh;
+	opacity: 0.8;
+	transition: 0.4s;
 }
 
 .card_content {
@@ -187,6 +234,23 @@ li {
 .blue_text_style {
 	color: #199cdc;
 	font-weight: bold;
+}
+
+.profile_image {
+   	display: block;
+	margin-top: -4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile_image > img{
+	border: 0.4em solid #199cdc;
+	border-radius: 50%;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 
